@@ -1,0 +1,23 @@
+<div class="sidebar" role="aside" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+		<header class="header">
+			{{#if @blog.logo}}
+			<a href="/">
+				<img id="blog" class="logo" src="{{@blog.logo}}">
+			</a>
+			{{else}}
+			<h1 class="title"><a href="/">{{@blog.title}}</a></h1>
+			{{/if}}
+
+			<div class="separator"></div>
+
+			<p class="description">{{{@blog.description}}}</p>
+			<div class="social-icons">
+				<a href="https://github.com/Eddolan" class="icon icon-github"></a>
+				<a href="https://plus.google.com/" class="icon icon-gplus"></a>
+				<a href="https://twitter.com/dolaneddie" class="icon icon-twitter"></a>
+				<a href="www.linkedin.com/pub/eddie-dolan/25/a14/b55/" class="icon icon-linkedin"></a>
+				<a href="/rss" class="icon-rss"></a>
+				<a href="mailto:dolan.charles08@gmail.com" class="icon-mail"></a>
+			</div>
+		</header>
+	</div>
